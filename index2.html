@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-form-col col-sm-3 col-lg-2">
+        <div class="app-form-group app-form-group-radio">
+            <label for="order-type-container">Тип ордера:</label>
+            <div id="order-type-container">
+                <div class="radio radio-success radio-inline radio-lg">
+                    <input type="radio" id="order-type-buy" value="Buy" name="order-type" checked="checked">
+                    <label for="order-type-buy"> Buy </label>
+                </div>
+                <div class="radio radio-success radio-inline radio-lg">
+                    <input type="radio" id="order-type-sell" value="Sell" name="order-type">
+                    <label for="order-type-sell"> Sell </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-form-col col-sm-9 col-lg-5">
+        <div class="app-form-group">
+            <label for="order-open-price">Цена открытия:</label>
+            <input id="order-open-price" type="text" value="0.0000" class="form-control">
+        </div>
+        <div class="app-form-group">
+            <label for="order-close-price">Цена закрытия:</label>
+            <input id="order-close-price" type="text" value="0.0000" class="form-control">
+        </div>
+    </div>
+    <div id="app-traders-calculator-mobile-profit" class="hidden-lg">
+        <h3>Ваша прибыль:</h3>
+        <h4 class="app-currency-wrap"><span id="app-traders-calculator-profit-mobile">100 000</span><span
+                class="app-currency">&nbsp;USD</span></h4>
+    </div>
+    <div class="app-traders-calculator__forms__buttons">
+        <button id="traders-calculator-submit"
+                class="app-traders-calculator__forms__btn app-traders-calculator__forms__btn-calculate" type="submit"
+                class="btn btn-default">Расчитать
+        </button>
+        <button id="traders-calculator-reset"
+                class="app-traders-calculator__forms__btn app-traders-calculator__forms__btn-reset">
+            Очистить
+        </button>
+    </div>
+</body>
+</html>

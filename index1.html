@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-traders-calculator">
+        <div class="app-traders-calculator__container container">
+            <h1 class="app-traders-calculator__title">
+                Калькулятор трейдера
+            </h1>
+            <div class="app-traders-calculator__description">
+                <p>Компания <strong>"Markets Invest"</strong> разработала специальный инструмент, который будет
+                    способствовать Вашему
+                    успеху в качестве трейдера, особенно если Вы только начинаете и не очень хорошо разбираетесь в
+                    тонкостях торговли на финансовых рынках.</p>
+                <p><strong>Калькулятор трейдера</strong> - это уникальный инструмент, который может быстро
+                    предоставить Вам важную
+                    информацию о сделках, которые Вы намерены сделать. Сюда включены такие показатели как: цена
+                    сделки, размер сделки, спред, своп, а также дополнительные сборы и прибыль. Вы можете даже
+                    делать рассчеты по нескольким сделкам одновременно, чтобы сравнить ожидаемые позиции!</p>
+            </div>
+            <div class="app-traders-calculator__notes">
+                <p>Чтобы использовать калькулятор трейдера, просто внесите необходимые данные ниже:</p>
+            </div>
+            <div class="app-traders-calculator__content">
+                <h3 class="app-traders-calculator__content__title">
+                    Калькулятор трейдера
+                </h3>
+                <div class="app-traders-calculator__forms">
+                    <form id="traders-calculator-form-account" name="traders-calculator-form-account" action="">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="app-form-group">
+                                    <label for="account-type"><span class="app-text-fixed">Тип счета:</span></label>
+                                    <div id="account-type">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="app-form-group">
+                                    <label for="account-currency">Валюта счета:</label>
+                                    <div id="account-currency">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="app-form-group">
+                                    <label for="leverage">Кредитное плечо:</label>
+                                    <div id="leverage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="traders-calculator-form-order" name="traders-calculator-form-order" action="">
+                        <div class="row">
+                            <div class="app-form-col col-md-12 col-lg-5">
+                                <div class="app-form-group">
+                                    <label for="order-instrument">Инструмент:</label>
+                                    <div id="order-instrument"></div>
+                                </div>
+                                <div class="app-form-group">
+                                    <label for="order-transaction-volume">Объем сделки:</label>
+                                    <input id="order-transaction-volume" type="text" value="0.1" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
